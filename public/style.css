@@ -1,0 +1,155 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #b5d5dd, #8a6993);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card Layout */
+.card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card h1, .card h3, .card h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs span {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.tabs .active {
+  background-color: #667eea;
+  color: #fff;
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #667eea;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #667eea;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #5a67d8;
+}
+
+#todo-section input {
+  margin-bottom: 10px;
+}
+
+/* Todo List */
+#todo-list {
+  list-style-type: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.todo-text {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.todo-actions button {
+  padding: 6px 10px;
+  font-size: 12px;
+  margin-left: 5px;
+  border-radius: 4px;
+  background-color: #4c51bf;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-actions button:hover {
+  background-color: #434190;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .tabs span {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
